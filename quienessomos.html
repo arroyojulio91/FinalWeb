@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> MATE heliTour</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo2.css">
+	<link href="css/lightbox.css" rel="stylesheet"/>
+</head>
+<body>
+<main>
+
+	<header>
+		<a href="index.html"><div id="logo1"></div></a>
+		<nav>
+<div>
+			<ul>
+				<li>
+					<a href="reserva.html"><p class="boton3" id="botonera3">RESERVAS</p></a>
+
+					<a href="itinerario.html"><p class="boton2" id="botonera2">ITINERARIO</p></a>
+
+					<a href="quienessomos.html"><p class="boton1" id="botonera1">INFO</p></a>
+				</li>
+			</ul>
+</div>
+</nav>
+	</header>
+
+
+
+	<section>
+		<div id="area4">
+				<div id="fotoheli">
+                	<img src="img/helimate.png">
+                </div>
+				<div id="informacion"> 
+					<h4 class="informacion"> INFORMACIONES</h4>
+					<p class="pinformacion">Más de 15 años de experiencia en la organización integral de vuelos en helicóptero en Buenos Aires y alrededores.</p><br>
+					<a href="itinerario.html"><button class="w3-button w3-black">Tours</button></a>
+			</div>
+
+				
+		<div id="botonmovil">	
+		<button type="button" class="collapsible">Quiénes somos</button>
+                         <div class="content">
+                              <p class="textocontent">Somos una agrupación constituida por pilotos profesionales con más de 15 años de experiencia en el rubro aeronáutico.</p>
+                         </div>
+         </div>           
+         <div id="botonmovil">         
+       <button type="button" class="collapsible">Nuestro servicio</button>
+                         <div class="content">
+                              <p class="textocontent">Ofrecemos la organización integral de <a class="hover-blue" href="tours">vuelos en helicóptero</a> en Buenos Aires, Argentina, a través de una amplia red de operadores aéreos.</p>
+                         </div>
+         </div>
+         <div id="botonmovil">            
+       <button type="button" class="collapsible">Por qué elegirnos</button>
+                         <div class="content">
+                              <p class="textocontent">Amamos lo que hacemos. Nuestra prioridad es la seguridad y nuestra misión es que disfrute de esta actividad como lo hacemos nosotros. Le invitamos a conocer las opiniones de quiénes volaron con nosotros en <a class="filter blue" target="_blank" href="http://www.tripadvisor.com/Attraction_Review-g312741-d4327496-Reviews-Buenos_Aires_en_Helicoptero-Buenos_Aires_Capital_Federal_District.html">Trip Advisor!</a></p>
+                         </div>
+                     </div>
+                    
+        <div id="botonmovil">                  
+        <button type="button" class="collapsible">Ubicación</button>
+                         <div class="content">
+                              <p class="textocontent">Los vuelos parten del Aeropuerto Internacional San Fernando, ubicado a 30 minutos en auto desde el centro de la ciudad de Buenos Aires <a class="blue" target="_blank" href="https://www.google.com/maps/place/Aeropuerto+Internacional+de+San+Fernando/@-34.455445,-58.5841,14z/data=!4m5!3m4!1s0x0:0x1f3829912ba9bc9a!8m2!3d-34.4554449!4d-58.5840996?hl=es">(ver ubicación)</a></p>
+                         </div>
+                        
+         </div>
+         <div id="botonmovil">          
+        <button type="button" class="collapsible">Aeronaves</button>
+                         <div class="content">
+                              <p class="textocontent">Utilizamos helicópteros Robinson 44 con capacidad para 1 piloto y 3 pasajeros. Visite la sección <a class="blue" href="itinerario.html">Flota</a> para obtener mayor información sobre estas aeronaves.</p>
+                         </div>                    
+                    </div>
+                    
+                </div>
+                
+		</div>
+	<div id= "area3">
+		<h4>MAPA</h4>
+			 <div id="mapa">
+			 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.8701126253695!2d-58.58628828492393!3d-34.45544488049813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca5176e8d535f%3A0x1f3829912ba9bc9a!2sAeropuerto%20Internacional%20de%20San%20Fernando!5e0!3m2!1ses!2sar!4v1600921010442!5m2!1ses!2sar" width="100%" height="100%" rameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		</div>
+	</div>
+
+
+	</section>
+	
+<footer>
+		<a href="https://es.wikipedia.org/wiki/Cars"><div id="logo2"><p class="logoNF"><img src="img/carslogo.png"></p></div></a>
+		<a href="https://www.instagram.com/helitours/"><div id="logo4"><p class="logoinsta"><img src="img/insta.png"></p></div></a>
+		<a href="https://www.facebook.com/airbornesolutions/"><div id="logo5"><img src="img/facebook.png"></p></div></a>
+		<a href="https://twitter.com/helitour_chile"><div id="logo3"><p class="logonx"><img src="img/twitter.png"></p> </div></a>
+		<center><a class="nombreapellido" href="https://arroyojulio91.github.io/finalmicro/"><p class="nombre"> Arroyo Julio </p></a></center>
+		
+
+		
+	</footer>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+
+</main>
+</body>
+</html>
